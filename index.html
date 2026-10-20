@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asesmen Sumatif: Perlawanan Bangsa Indonesia terhadap Kolonial</title>
+<style>
+:root{--bg:#fdf6f0;--card:#fff;--ink:#3d3a4b;--mut:#7b7790;--pri:#b8a4e3;--pri2:#e8dff8;--ok:#bfe8cf;--okt:#1f6b3f;--bad:#f9c9cf;--badt:#8f2a38;--line:#eadfd6;--peach:#ffd9c7;--mint:#d4f1e4;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1f1d29;--card:#2a2837;--ink:#f0ecf8;--mut:#aaa5c0;--pri:#a58ee0;--pri2:#3b3552;--ok:#24533a;--okt:#c6f2d8;--bad:#5c2a33;--badt:#ffd3d8;--line:#403c52;--peach:#4a3a38;--mint:#264238}}
+:root[data-theme="dark"]{--bg:#1f1d29;--card:#2a2837;--ink:#f0ecf8;--mut:#aaa5c0;--pri:#a58ee0;--pri2:#3b3552;--ok:#24533a;--okt:#c6f2d8;--bad:#5c2a33;--badt:#ffd3d8;--line:#403c52;--peach:#4a3a38;--mint:#264238}
+html{color-scheme:light dark;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Segoe UI",system-ui,-apple-system,sans-serif;line-height:1.55}
+main{max-width:760px;margin:0 auto;padding:18px 14px 40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 6px 22px rgba(150,130,190,.12)}
+h1{font-size:1.45rem;margin:.2em 0}h2{font-size:1.08rem;margin:.4em 0 1em;font-weight:600}
+.hero{background:linear-gradient(135deg,var(--pri2),var(--peach));text-align:center}
+.mut{color:var(--mut);font-size:.9rem}
+input{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:1rem;margin:12px 0}
+button{font:inherit;color:inherit;cursor:pointer}
+.go{background:var(--pri);color:#fff;border:0;border-radius:14px;padding:12px 24px;font-weight:600;font-size:1rem}
+.go:disabled{opacity:.4;cursor:not-allowed}
+.top{display:flex;justify-content:space-between;align-items:center;font-weight:600}
+.chip{background:var(--pri2);border-radius:99px;padding:3px 12px;font-size:.8rem}
+.bar{height:8px;background:var(--pri2);border-radius:9px;margin:10px 0 14px;overflow:hidden}.bar i{display:block;height:100%;background:var(--pri);transition:width .3s}
+.tag{display:inline-block;background:var(--mint);border-radius:10px;padding:2px 10px;font-size:.78rem;margin-bottom:4px}
+.opt{display:flex;gap:12px;align-items:flex-start;width:100%;text-align:left;background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:11px 14px;margin:8px 0}
+.opt.on{border-color:var(--pri);background:var(--pri2)}
+.opt b{flex:none;width:26px;height:26px;border-radius:50%;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:.8rem}
+.opt b.bx{border-radius:7px}.opt.on b.bx::after{content:"✓"}
+.opt.ok{background:var(--ok);border-color:var(--okt);color:var(--okt)}.opt.bad{background:var(--bad);border-color:var(--badt);color:var(--badt)}
+.st{background:var(--bg);border:1px solid var(--line);border-radius:14px;padding:12px;margin:8px 0}.st p{margin:0 0 8px}
+.tf{display:flex;gap:8px}.tf button{flex:1;padding:8px;border-radius:12px;border:2px solid var(--line);background:var(--card)}
+.tf button.on{border-color:var(--pri);background:var(--pri2)}.tf button.ok{background:var(--ok);border-color:var(--okt);color:var(--okt)}.tf button.bad{background:var(--bad);border-color:var(--badt);color:var(--badt)}
+.exp{margin-top:14px;padding:12px 14px;border-radius:14px;background:var(--peach);font-size:.94rem}
+.row{display:flex;justify-content:flex-end;margin-top:16px;gap:10px}
+.score{font-size:3.2rem;font-weight:700;color:var(--pri);margin:0}
+.rv{display:flex;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem}.rv span:first-child{width:26px;flex:none}
+.sum{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:12px 0}.sum div{background:var(--pri2);border-radius:14px;padding:8px 14px;font-size:.88rem}
+.tbl{width:100%;border-collapse:collapse;font-size:.88rem}.tbl th,.tbl td{padding:7px 8px;border-bottom:1px solid var(--line);text-align:left}.tbl th{background:var(--pri2)}
+.wrap{overflow-x:auto}.kp{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.kp div{flex:1;min-width:100px;background:var(--mint);border-radius:14px;padding:10px;text-align:center}.kp b{display:block;font-size:1.4rem}
+.pb{height:8px;background:var(--pri2);border-radius:9px;overflow:hidden;min-width:70px}.pb i{display:block;height:100%;background:var(--pri)}
+.sm{margin-top:12px;font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<main><div id="app"></div></main>
+<script>
+const L={pg:"Pilihan Ganda",pgk:"Pilihan Ganda Kompleks",bs:"Benar / Salah"};
+const Q=[
+{t:"pg",tag:"Tokoh & Jalannya Peristiwa · Maluku",q:"Perlawanan rakyat Maluku tahun 1817 dipimpin oleh Thomas Matulessy (Kapitan Pattimura). Peristiwa penting dalam perlawanan tersebut adalah …",o:["Penyerbuan Benteng Bonjol di Sumatera Barat","Perebutan Benteng Duurstede di Pulau Saparua","Pertempuran di Benteng Moraya di Tondano","Perang gerilya di hutan Tegalrejo Yogyakarta"],a:[1],e:"Pattimura dan pasukannya merebut Benteng Duurstede di Pulau Saparua pada Mei 1817. Residen van den Berg tewas dalam peristiwa ini."},
+{t:"pg",tag:"Penyebab · Maluku",q:"Penyebab perlawanan rakyat Maluku terhadap Belanda pada 1817 adalah …",o:["Belanda mengangkat raja baru di seluruh Maluku","Belanda menerapkan monopoli rempah dan kerja paksa","Belanda melarang rakyat memeluk agama tertentu","Belanda menolak membayar upah para pelaut Maluku"],a:[1],e:"Setelah Maluku diserahkan kembali oleh Inggris, Belanda memberlakukan lagi monopoli, penyerahan wajib hasil bumi, dan kerja paksa yang menyengsarakan rakyat."},
+{t:"pg",tag:"Berakhirnya · Minahasa",q:"Dalam Perang Tondano, Belanda berhasil menaklukkan Benteng Moraya setelah menggunakan siasat …",o:["Membendung Sungai Temberan hingga Danau Tondano meluap","Menerapkan sistem Benteng Stelsel di sekitar Tondano","Mengumumkan Plakat Panjang kepada rakyat Minahasa","Mengerahkan Pasukan Marsose ke wilayah Minahasa"],a:[0],e:"Dengan membendung Sungai Temberan, air Danau Tondano meluap sehingga pasukan Minahasa terdesak. Benteng Moraya akhirnya jatuh pada 1809."},
+{t:"pg",tag:"Penyebab · Perang Padri",q:"Perang Padri diawali oleh pertentangan antara Kaum Padri dan Kaum Adat. Pokok pertentangan tersebut adalah …",o:["Perebutan jalur perdagangan lada di pesisir","Kaum Padri ingin menghapus judi dan sabung ayam","Tuntutan Kaum Adat untuk merdeka dari Pagaruyung","Penolakan Kaum Padri terhadap pajak dari Belanda"],a:[1],e:"Kaum Padri ingin menegakkan syariat dan menghapus kebiasaan seperti judi, sabung ayam, dan minuman keras. Kaum Adat yang terdesak kemudian meminta bantuan Belanda."},
+{t:"pg",tag:"Penyebab · Perang Aceh",q:"Belanda menyatakan perang kepada Kesultanan Aceh pada 1873 setelah Traktat Sumatera 1871 ditandatangani. Isi traktat tersebut yang merugikan Aceh adalah …",o:["Inggris membiarkan Belanda meluaskan kekuasaan ke Aceh","Aceh wajib membayar ganti rugi perang kepada Belanda","Belanda boleh mendirikan pabrik gula di tanah Aceh","Inggris dan Belanda membagi wilayah Aceh menjadi dua"],a:[0],e:"Traktat Sumatera 1871 membuka jalan bagi Belanda menguasai Aceh karena Inggris tidak lagi menghalangi. Aceh menolak mengakui kedaulatan Belanda sehingga perang pecah."},
+{t:"pg",tag:"Penyebab · Perang Diponegoro",q:"Penyebab langsung meletusnya Perang Diponegoro (1825–1830) adalah …",o:["Pemasangan patok jalan di makam leluhur Tegalrejo","Penangkapan Kyai Mojo oleh pasukan Belanda","Pelaksanaan Tanam Paksa di wilayah Yogyakarta","Penolakan Belanda terhadap Perjanjian Giyanti"],a:[0],e:"Pemasangan patok untuk pembuatan jalan melewati makam leluhur di Tegalrejo memicu kemarahan Diponegoro. Perang pun pecah pada 1825."},
+{t:"pg",tag:"Hikmah · Perang Padri",q:"Nilai yang dapat diteladani dari akhir Perang Padri, ketika Kaum Adat dan Kaum Padri akhirnya bersatu melawan Belanda, adalah …",o:["Kekuatan bangsa asing tidak mungkin bisa dilawan","Perpecahan melemahkan, persatuan menjadi kekuatan","Perundingan dengan penjajah selalu menguntungkan","Perbedaan pendapat harus diselesaikan dengan perang"],a:[1],e:"Pertentangan sesama bangsa dimanfaatkan Belanda. Ketika keduanya bersatu, perlawanan menjadi lebih kuat. Pelajaran pentingnya adalah persatuan."},
+{t:"pgk",tag:"Tokoh · Perang Aceh",q:"Pilihlah semua tokoh yang berjuang dalam Perang Aceh! (jawaban benar lebih dari satu)",o:["Teuku Umar","Cut Nyak Dhien","Teuku Cik Di Tiro","Kyai Mojo","Tuanku Nan Renceh"],a:[0,1,2],e:"Teuku Umar, Cut Nyak Dhien, dan Teuku Cik Di Tiro adalah tokoh Perang Aceh. Kyai Mojo berjuang dalam Perang Diponegoro, sedangkan Tuanku Nan Renceh adalah tokoh Perang Padri."},
+{t:"pgk",tag:"Penyebab · Perang Diponegoro",q:"Pilihlah semua yang merupakan penyebab Perang Diponegoro! (jawaban benar lebih dari satu)",o:["Campur tangan Belanda dalam urusan takhta keraton","Rakyat dibebani pajak dan kerja paksa yang berat","Pemasangan patok jalan di atas makam leluhur","Penolakan Sultan Aceh terhadap Traktat Sumatera","Kewajiban setor beras kepada Belanda di Minahasa"],a:[0,1,2],e:"Campur tangan Belanda dalam keraton, beban rakyat, dan patok makam di Tegalrejo adalah penyebab Perang Diponegoro. Dua pilihan lainnya berkaitan dengan Perang Aceh dan Perang Tondano."},
+{t:"pgk",tag:"Berakhirnya · Strategi Belanda",q:"Pilihlah semua pasangan strategi Belanda dan perlawanan yang BENAR! (jawaban benar lebih dari satu)",o:["Benteng Stelsel – Perang Diponegoro","Plakat Panjang – Perang Padri","Bendungan Temberan – Perang Tondano","Pasukan Marsose – Perang Padri","Perjanjian Giyanti – Perang Aceh"],a:[0,1,2],e:"Benteng Stelsel digunakan melawan Diponegoro, Plakat Panjang (1833) dalam Perang Padri, dan pembendungan Sungai Temberan di Tondano. Pasukan Marsose dipakai di Aceh, sedangkan Perjanjian Giyanti terjadi pada 1755 dan tidak berhubungan dengan Perang Aceh."},
+{t:"pgk",tag:"Hikmah · Semua Perlawanan",q:"Pilihlah semua nilai yang dapat diteladani dari perlawanan bangsa Indonesia terhadap kolonial! (jawaban benar lebih dari satu)",o:["Cinta tanah air dan rela berkorban untuk bangsa","Pantang menyerah menghadapi penjajahan asing","Menjunjung tinggi persatuan dan kesatuan bangsa","Menerima kekuasaan asing demi ketenangan hidup","Mendahulukan kelompok daripada kepentingan bangsa"],a:[0,1,2],e:"Perlawanan di berbagai daerah mengajarkan cinta tanah air, semangat pantang menyerah, dan persatuan. Dua pilihan terakhir bertentangan dengan semangat perjuangan para pahlawan."},
+{t:"bs",tag:"Tokoh · Jalannya · Berakhirnya · Maluku",q:"Tentukan pernyataan berikut Benar atau Salah tentang perlawanan Pattimura!",s:[["Pattimura memimpin perlawanan rakyat Maluku di Pulau Saparua pada tahun 1817.",1],["Perlawanan berakhir setelah Pattimura menyerah secara sukarela dan diampuni oleh Belanda.",0],["Pattimura dihukum gantung di Ambon pada 16 Desember 1817.",1]],e:"Pattimura tertangkap karena pengkhianatan dan pengaruh Belanda, lalu dihukum gantung di Ambon pada 16 Desember 1817. Beliau tidak menyerah secara sukarela."},
+{t:"bs",tag:"Tokoh · Penyebab · Berakhirnya · Perang Padri",q:"Tentukan pernyataan berikut Benar atau Salah tentang Perang Padri!",s:[["Tuanku Imam Bonjol adalah salah satu pemimpin Kaum Padri.",1],["Kaum Adat meminta bantuan Belanda untuk menghadapi Kaum Padri.",1],["Perang Padri berakhir pada 1837 setelah Benteng Bonjol jatuh dan Imam Bonjol diasingkan ke Aceh.",0]],e:"Imam Bonjol ditangkap pada 1837 setelah Benteng Bonjol jatuh, lalu diasingkan ke Cianjur, Ambon, dan akhirnya Manado, bukan Aceh."},
+{t:"bs",tag:"Jalannya · Berakhirnya · Perang Aceh",q:"Tentukan pernyataan berikut Benar atau Salah tentang Perang Aceh!",s:[["Teuku Umar pernah berpura-pura menyerah kepada Belanda sebagai siasat perang.",1],["Cut Nyak Dhien melanjutkan perjuangan setelah Teuku Umar gugur pada 1899.",1],["Perang Aceh berlangsung singkat dan berakhir pada 1830.",0]],e:"Perang Aceh berlangsung lama, dimulai pada 1873 dan baru dapat dipadamkan Belanda sekitar 1904. Tahun 1830 adalah akhir Perang Diponegoro."},
+{t:"bs",tag:"Tokoh · Jalannya · Berakhirnya · Perang Diponegoro",q:"Tentukan pernyataan berikut Benar atau Salah tentang Perang Diponegoro!",s:[["Pasukan Diponegoro banyak menggunakan taktik perang gerilya.",1],["Kyai Mojo dan Sentot Alibasyah Prawirodirjo termasuk tokoh yang mendampingi Diponegoro.",1],["Setelah ditangkap di Magelang pada 1830, Diponegoro diasingkan ke Ambon hingga wafat.",0]],e:"Diponegoro ditangkap lewat perundingan di Magelang pada 28 Maret 1830, lalu diasingkan ke Manado dan kemudian Makassar, tempat beliau wafat pada 1855."}
+];
+const N=Q.length,app=document.getElementById("app");
+let i=0,sel,locked,name="",res=[];
+function start(){app.innerHTML=`<div class="card hero"><div style="font-size:2.4rem">📜</div><h1>Asesmen Sumatif Sejarah Indonesia</h1><p>Perlawanan Bangsa Indonesia terhadap Kolonial</p><p class="mut">Maluku · Minahasa · Perang Padri · Perang Aceh · Perang Diponegoro<br>15 soal: pilihan ganda, pilihan ganda kompleks, benar/salah</p><input id="nm" placeholder="Tulis nama lengkapmu" maxlength="60"><button class="go" id="st" disabled>Mulai</button><div id="tz" style="margin-top:14px"></div></div>`;showT();
+const n=document.getElementById("nm"),b=document.getElementById("st");n.oninput=()=>b.disabled=!n.value.trim();b.onclick=()=>{name=n.value.trim();i=0;res=[];show()}}
+function show(){const q=Q[i];sel=q.t=="pg"?null:q.t=="pgk"?[]:q.s.map(()=>null);locked=false;
+let h=`<div class="card"><div class="top"><span>Soal ${i+1} / ${N}</span><span class="chip">${L[q.t]}</span></div><div class="bar"><i style="width:${i/N*100}%"></i></div><span class="tag">${q.tag}</span><h2>${q.q}</h2><div id="body">`;
+if(q.t=="bs")h+=q.s.map((s,k)=>`<div class="st"><p>${k+1}. ${s[0]}</p><div class="tf"><button data-k="${k}" data-v="1">Benar</button><button data-k="${k}" data-v="0">Salah</button></div></div>`).join("");
+else h+=q.o.map((o,k)=>`<button class="opt" data-k="${k}"><b class="${q.t=="pgk"?"bx":""}">${q.t=="pgk"?"":"ABCDE"[k]}</b><span>${o}</span></button>`).join("");
+h+=`</div><div id="fb"></div><div class="row"><button class="go" id="ck" disabled>Periksa Jawaban</button></div></div>`;app.innerHTML=h;window.scrollTo(0,0);
+document.getElementById("body").onclick=pick;document.getElementById("ck").onclick=check}
+function ready(){const q=Q[i];return q.t=="pg"?sel!==null:q.t=="pgk"?sel.length>0:sel.every(v=>v!==null)}
+function pick(e){if(locked)return;const b=e.target.closest("button");if(!b)return;const q=Q[i],k=+b.dataset.k;
+if(q.t=="pg"){sel=k;document.querySelectorAll(".opt").forEach((o,j)=>o.classList.toggle("on",j==k))}
+else if(q.t=="pgk"){sel=sel.includes(k)?sel.filter(x=>x!=k):[...sel,k];document.querySelectorAll(".opt").forEach((o,j)=>o.classList.toggle("on",sel.includes(j)))}
+else{sel[k]=+b.dataset.v;b.parentNode.querySelectorAll("button").forEach(x=>x.classList.toggle("on",x==b))}
+document.getElementById("ck").disabled=!ready()}
+function check(){const q=Q[i];locked=true;let ok;
+if(q.t=="pg"){ok=sel==q.a[0]}
+else if(q.t=="pgk"){ok=sel.length==q.a.length&&q.a.every(x=>sel.includes(x))}
+else{ok=q.s.every((s,k)=>sel[k]==s[1])}
+if(q.t=="bs"){document.querySelectorAll(".st").forEach((d,k)=>{const bt=d.querySelectorAll("button");bt.forEach(x=>x.classList.remove("on"));const right=q.s[k][1];bt[right?0:1].classList.add("ok");if(sel[k]!=right)bt[sel[k]?0:1].classList.add("bad")})}
+else document.querySelectorAll(".opt").forEach((o,j)=>{o.classList.remove("on");const c=q.a.includes(j),s=q.t=="pg"?sel==j:sel.includes(j);if(c)o.classList.add("ok");else if(s)o.classList.add("bad")});
+res.push(ok);
+document.getElementById("fb").innerHTML=`<div class="exp"><b>${ok?"✅ Jawabanmu benar.":"❌ Jawabanmu belum tepat."}</b><br>${q.e}</div>`;
+const c=document.getElementById("ck");c.disabled=false;c.textContent=i==N-1?"Lihat Hasil":"Soal Berikutnya";c.onclick=()=>{i++;i<N?show():finish()}}
+function finish(){const n=res.filter(Boolean).length,sc=Math.round(n/N*100);
+const by=t=>{const ix=Q.map((q,k)=>q.t==t?k:-1).filter(k=>k>=0);return `${ix.filter(k=>res[k]).length}/${ix.length}`};
+app.innerHTML=`<div class="card hero"><div style="font-size:2.4rem">🏅</div><h1>Hasil ${name}</h1><p class="score">${sc}</p><p>${n} dari ${N} soal benar</p><div class="sum"><div>Pilihan Ganda ${by("pg")}</div><div>PG Kompleks ${by("pgk")}</div><div>Benar/Salah ${by("bs")}</div></div><p class="sm" id="kirim">Mengirim skor ke guru…</p><p class="mut">${sc>=75?"Hebat! Pemahamanmu sudah baik.":"Tetap semangat! Pelajari kembali materi yang belum tepat."}</p></div>
+<div class="card" style="margin-top:14px"><h2>Rekap Jawaban</h2>${Q.map((q,k)=>`<div class="rv"><span>${res[k]?"✅":"❌"}</span><span>No. ${k+1} · ${q.tag}</span></div>`).join("")}<div class="row"><button class="go" id="re">Ulangi</button></div></div>`;
+document.getElementById("re").onclick=start;kirim(sc,n,by("pg"),by("pgk"),by("bs"))}
+let DB=null,UID=null,isT=false,unsub=null,rows=[];
+(async()=>{try{if(typeof claude==="undefined")return;const us=await claude.use("user");DB=await claude.use("db");if(us){isT=await us.canEdit();UID=await us.id()}showT()}catch(e){}})();
+function showT(){const z=document.getElementById("tz");if(z&&isT&&DB){z.innerHTML='<button class="chip" id="dg" style="border:0">📊 Dasbor Guru: lihat skor siswa</button>';document.getElementById("dg").onclick=dash}}
+async function kirim(sc,n,a,b,c){const el=document.getElementById("kirim");
+if(!DB||!UID){el.textContent="⚠️ Skor belum terkirim ke guru karena belum masuk ke akun. Silakan foto layar hasil ini dan tunjukkan kepada guru.";return}
+try{await DB.doc("hasil/"+UID).set({nama:name,skor:sc,benar:n,pg:a,pgk:b,bs:c,jawaban:res.map(x=>x?1:0),waktu:Date.now()});el.textContent="✅ Skor sudah terkirim ke guru."}
+catch(e){el.textContent="⚠️ Skor belum terkirim ke guru. Silakan foto layar hasil ini dan tunjukkan kepada guru."}}
+function dash(){app.innerHTML='<div class="card"><div class="top"><span>📊 Dasbor Guru</span><button class="chip" id="bk" style="border:0">← Kembali</button></div><div id="ds" class="mut" style="margin-top:12px">Memuat data siswa…</div></div>';
+document.getElementById("bk").onclick=()=>{if(unsub)unsub();unsub=null;start()};
+unsub=DB.collection("hasil").orderBy("nama").onSnapshot(s=>{rows=s.docs.map(d=>d.data());draw()},e=>{document.getElementById("ds").textContent="Data tidak dapat dimuat."})}
+function draw(){const d=document.getElementById("ds");if(!d)return;
+if(!rows.length){d.textContent="Belum ada siswa yang mengumpulkan.";return}
+const sk=rows.map(r=>r.skor),avg=Math.round(sk.reduce((a,b)=>a+b,0)/sk.length);
+const esc=t=>String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const per=Q.map((q,k)=>{const p=rows.filter(r=>r.jawaban&&r.jawaban[k]==1).length;return Math.round(p/rows.length*100)});
+d.innerHTML=`<div class="kp"><div><b>${rows.length}</b>Siswa</div><div><b>${avg}</b>Rata-rata</div><div><b>${Math.max(...sk)}</b>Tertinggi</div><div><b>${Math.min(...sk)}</b>Terendah</div></div>
+<div class="wrap"><table class="tbl"><tr><th>No</th><th>Nama</th><th>Skor</th><th>Benar</th><th>PG</th><th>PGK</th><th>B/S</th><th>Waktu</th></tr>${rows.map((r,k)=>`<tr><td>${k+1}</td><td>${esc(r.nama)}</td><td><b>${r.skor}</b></td><td>${r.benar}/${N}</td><td>${esc(r.pg)}</td><td>${esc(r.pgk)}</td><td>${esc(r.bs)}</td><td>${new Date(r.waktu).toLocaleString("id-ID",{day:"2-digit",month:"short",hour:"2-digit",minute:"2-digit"})}</td></tr>`).join("")}</table></div>
+<h2 style="margin-top:20px">Analisis per Soal (% siswa menjawab benar)</h2><div class="wrap"><table class="tbl">${Q.map((q,k)=>`<tr><td>No. ${k+1}</td><td>${q.tag}</td><td><div class="pb"><i style="width:${per[k]}%"></i></div></td><td>${per[k]}%</td></tr>`).join("")}</table></div>
+<div class="row"><button class="go" id="ex">Unduh CSV (Excel)</button></div>`;
+document.getElementById("ex").onclick=async()=>{try{const dl=await claude.use("downloads");if(!dl)return;const f=v=>'"'+String(v).replace(/"/g,'""')+'"';
+const h=["No","Nama","Skor","Benar","PG","PGK","Benar/Salah",...Q.map((q,k)=>"Soal "+(k+1))];
+const l=[h.map(f).join(",")].concat(rows.map((r,k)=>[k+1,r.nama,r.skor,r.benar,r.pg,r.pgk,r.bs,...Q.map((q,j)=>r.jawaban&&r.jawaban[j]==1?1:0)].map(f).join(",")));
+await dl.save({filename:"skor-sumatif-perlawanan-kolonial.csv",data:"\ufeff"+l.join("\n")})}catch(e){}}}
+start();
+</script>
+</body>
+</html>
